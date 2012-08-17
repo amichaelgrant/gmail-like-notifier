@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>gn test</title>
+		<script type="text/javascript" src="./lib/jquery.js" ></script>
+		<script type="text/javascript" src="./notify.js" ></script>
+		<script>
+			$(document).ready(function(){
+				$('#show').click( function(){
+					$(document).Notify({location: 'top-center'});
+				});
+				
+				$('#update').click( function(){
+					$(document).Notify('update');
+				});
+
+				$('#hide').click( function(){
+					$(document).Notify('hide');
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<button id="show"> Show Notifier </button>
+		<button id="update"> Update Notifier </button>
+		<button id="hide"> Hide Notifier </button>
+	</body>
+</html>
